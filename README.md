@@ -11,5 +11,5 @@ Nyttige links:
 
 ## Eksempel formatering:
 
-1.*Cursive*tekst.
-2. **Bold** tekst.
+1.*Cursive* fremhævning.
+2. **Bold** fremhævning.
