@@ -3,7 +3,7 @@ public class SudokuChecker {
 		int problem = 0;
 		int[][] sudokuPuzzle = 
 			{
-			{1, 2, 3, 6, 7, 8, 9, 4, 5}, 
+			{2, 2, 3, 6, 7, 8, 9, 4, 5}, 
 			{5, 8, 4, 2, 3, 9, 7, 6, 1}, 
 			{9, 6, 7, 1, 4, 5, 3, 2, 8}, 
 			{3, 7, 2, 4, 6, 1, 5, 8, 9}, 
@@ -26,13 +26,33 @@ public class SudokuChecker {
 		}
 
 		// Check if rows are correct
-		for (int ; ; ) {
-			
+		for (int row = 0; row < sudokuPuzzle.length; row++) {
+			for (int coloumn = 0; coloumn < sudokuPuzzle[row].length; coloumn++){
+				boolean[] taken = {false, false, false, false, false, false, false, false, false, };
+				int currentNr = sudokuPuzzle[row][coloumn];
+				if (taken[currentNr-1] == true){
+					problem = 2;
+					System.out.println("Problem detected!!!");
+					break;
+				}else {
+					taken[currentNr-1] = true;
+					System.out.println("row: " + row + "coloumn: " + coloumn);
+				}
+
+			}
 		}
 
 		switch(problem){
 			case 1: 
 				System.out.println("Problem with If Filled");
+				break;
+
+			case 2:
+				System.out.println("Problem with Row Check");
+				break;
+
+			default:
+				System.out.println("This is a valid board");
 		}
 
 	}
