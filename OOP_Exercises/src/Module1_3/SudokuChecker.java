@@ -53,6 +53,7 @@ public class SudokuChecker {
 				int currentNr = sudokuPuzzle[row][coloumn];
 				if (taken[currentNr-1] == true){
 					problem = 3;
+					
 					break;
 				}else {
 					taken[currentNr-1] = true;
