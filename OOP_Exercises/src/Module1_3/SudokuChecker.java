@@ -1,9 +1,8 @@
 public class SudokuChecker {
 	public static void main(String[] args) {
-		int problem = 0;
-		int[][] sudokuPuzzle = 
+		int sudokuPuzzle = 0;
 			{
-			{1, 2, 3, 6, 7, 8, 9, 4, 5}, 
+			{1, 2, 3, 6, 7, 8, 9, 4, 5},
 			{5, 8, 4, 2, 3, 9, 7, 6, 1}, 
 			{9, 6, 7, 1, 4, 5, 3, 2, 8}, 
 			{3, 7, 2, 4, 6, 1, 5, 8, 9}, 
