@@ -1,4 +1,7 @@
+package Module1_3;
+
 public class SudokuChecker {
+	/*
 	public static void main(String[] args) {
 		int sudokuPuzzle = 0;
 			{
@@ -90,4 +93,6 @@ public class SudokuChecker {
 			System.out.println("This is a valid board");
 
 	}
+	*/
+
 }
