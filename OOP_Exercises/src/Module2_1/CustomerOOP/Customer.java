@@ -3,7 +3,7 @@ package Module2_1.CustomerOOP;
 public class Customer {
     String name;
     int id;
-    static double balance;
+    double balance;
 
     public Customer(String name1, int id1){
         name = name1;
