@@ -18,15 +18,4 @@ public class FoodItem extends Item {
                 + "' expires='"+getExpires()+"'";
     }
 
-    public static void main(String[] args) {
-        FoodItem[] items = new FoodItem[10];
-        for (int i = 0; i < items.length; i++) {
-            items[i] = new FoodItem("Item "+1, 12.3*i,
-                                        new Date(i*1000*60*60*24));
-        }
-
-        for (FoodItem item: items) {
-            System.out.println(item);
-        }
-    }
 }
