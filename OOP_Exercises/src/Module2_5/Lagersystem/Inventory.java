@@ -4,19 +4,35 @@ import java.util.ArrayList;
 
 public class Inventory {
     ArrayList<Item> items = new ArrayList<>();
+    Inventory (ArrayList<Item> items) {
+        this.items = items;
+    }
+    Inventory () {
+        this(new ArrayList<Item>());
+    }
+
 
     public void addItem(Item item){
         items.add(item);
         System.out.println("Item: " + item.getName());
     }
 
+
     public void removeItem(Item item){
-        int i = items.indexOf(item);
-        if (i == -1){
-            System.out.println("Not an item!");
-        } else{
-            items.remove(i);
+            items.remove(item);
+
+    }
+
+    public void removeExpiredFoods(){
+        ArrayList<Item> currentItems = new ArrayList<Item>();
+        for (int i = 0; i < items.size(); i++) {
+            Item item = items.get(i);
+            boolean expired = item.isExpired();
+            if (!expired) {
+                currentItems.add(item);
+            }
         }
+        items = currentItems;
     }
 
     public double getInventoryValue(){

@@ -1,6 +1,6 @@
 package Module2_5.Lagersystem;
 
-class Item {
+abstract class Item implements Expireable{
     private String name;
     private double price;
 
