@@ -19,25 +19,4 @@ public class FoodItem extends Item {
                 + "' expires='"+getExpires()+"'";
     }
 
-    public static void main(String[] args) {
-        Inventory inventory = new Inventory();
-        FoodItem[] items = new FoodItem[10];
-        for (int i = 0; i < items.length; i++) {
-            items[i] = new FoodItem("Item "+i, 12.3*i,
-                                        new Date(i*1000*60*60*24));
-            inventory.addItem(items[i]);
-        }
-
-
-        inventory.removeExpiredFoods();
-
-        inventory.printInventory();
-    }
-
-    @Override
-    public boolean isExpired() {
-        if (currentDate.before(expires)){
-            return true;
-        } else return false;
-    }
 }
