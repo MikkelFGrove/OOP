@@ -19,4 +19,5 @@ public class FoodItem extends Item {
                 + "' expires='"+getExpires()+"'";
     }
 
+<<<<<<< HEAD
 }
