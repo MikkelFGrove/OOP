@@ -3,17 +3,9 @@ package Module2_5.Lagersystem;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class NonFoodItem extends Item{
-    private ArrayList<String> materials = new ArrayList<>();
-    NonFoodItem (String name, double price, ArrayList materials){
 public class NonFoodItem extends Item {
     private String[] materials;
     NonFoodItem (String name, double price, String[] materials){
-=======
-public class NonFoodItem extends Item{
-    private ArrayList<String> materials = new ArrayList<>();
-    NonFoodItem (String name, double price, ArrayList materials){
->>>>>>> 9436988864e32404b73bfcf163e13cced5b20c6a
         super(name, price);
         this.materials = materials;
     }
@@ -53,6 +45,4 @@ public class NonFoodItem extends Item{
     public boolean isExpired() {
         return false;
     }
-=======
->>>>>>> 9436988864e32404b73bfcf163e13cced5b20c6a
 }
