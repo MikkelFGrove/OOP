@@ -6,6 +6,8 @@ module com.example.javafxprojects {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
 
+    opens Installation to javafx.fxml;
     opens com.example.javafxprojects to javafx.fxml;
+    exports Installation;
     exports com.example.javafxprojects;
 }
