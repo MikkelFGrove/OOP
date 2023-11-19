@@ -1,4 +1,4 @@
-package Installation;
+package Module3_6.Installation;
 
 import javafx.application.Application;
 import javafx.application.Platform;
