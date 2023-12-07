@@ -1,0 +1,4 @@
+
+
+Hvilke datatyper er velegnede til at representere en temperatur?
+       Det kommer an på hvad du vil lave, men nok double eller int.

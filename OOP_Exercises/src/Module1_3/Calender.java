@@ -1,3 +1,5 @@
+package Module1_3;
+
 public class Calender {
 	public static void main(String[] args) {
 		int[] monthNorm = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -10,7 +12,6 @@ public class Calender {
 				System.out.print(i + " ");
 			}
 			System.out.println("");
-
 
 		}
 	}

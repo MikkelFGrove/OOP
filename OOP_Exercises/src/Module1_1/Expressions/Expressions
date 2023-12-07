@@ -1,0 +1,9 @@
+Hvad er et expression?
+        Et expression er et stykke kode der eveluerer til en værdi.
+
+Er en tildeling (af en værdi til en variabel) et expression? Hvordan tester I en
+hypotese om dette?
+        Nej da den ikke evaluerer en værdi men i stedet tildeler den.
+
+Hvad er forskellen på et expression og et statement?
+        Et statement er enheden af et trin der skal udføres
